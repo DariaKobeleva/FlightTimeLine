@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2090739B2BE40469002A4014 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2090739A2BE40469002A4014 /* HomeView.swift */; };
+		2090739D2BE40528002A4014 /* UserProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2090739C2BE40528002A4014 /* UserProfileView.swift */; };
+		2090739F2BE40611002A4014 /* FlightBoardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2090739E2BE40611002A4014 /* FlightBoardView.swift */; };
+		209073A12BE40DFE002A4014 /* FlightRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 209073A02BE40DFE002A4014 /* FlightRowView.swift */; };
+		209073A32BE40EE3002A4014 /* FlightDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 209073A22BE40EE3002A4014 /* FlightDetailsView.swift */; };
 		209427DF2BDD2ED50021F450 /* FlightTimeLineApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 209427DE2BDD2ED50021F450 /* FlightTimeLineApp.swift */; };
 		209427E12BDD2ED50021F450 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 209427E02BDD2ED50021F450 /* ContentView.swift */; };
 		209427E32BDD2ED70021F450 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 209427E22BDD2ED70021F450 /* Assets.xcassets */; };
@@ -21,6 +26,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2090739A2BE40469002A4014 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		2090739C2BE40528002A4014 /* UserProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfileView.swift; sourceTree = "<group>"; };
+		2090739E2BE40611002A4014 /* FlightBoardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightBoardView.swift; sourceTree = "<group>"; };
+		209073A02BE40DFE002A4014 /* FlightRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightRowView.swift; sourceTree = "<group>"; };
+		209073A22BE40EE3002A4014 /* FlightDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightDetailsView.swift; sourceTree = "<group>"; };
 		209427DB2BDD2ED50021F450 /* FlightTimeLine.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FlightTimeLine.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		209427DE2BDD2ED50021F450 /* FlightTimeLineApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightTimeLineApp.swift; sourceTree = "<group>"; };
 		209427E02BDD2ED50021F450 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -70,6 +80,11 @@
 				209427F02BDD2F700021F450 /* Models */,
 				209427DE2BDD2ED50021F450 /* FlightTimeLineApp.swift */,
 				209427E02BDD2ED50021F450 /* ContentView.swift */,
+				2090739A2BE40469002A4014 /* HomeView.swift */,
+				2090739E2BE40611002A4014 /* FlightBoardView.swift */,
+				209073A22BE40EE3002A4014 /* FlightDetailsView.swift */,
+				209073A02BE40DFE002A4014 /* FlightRowView.swift */,
+				2090739C2BE40528002A4014 /* UserProfileView.swift */,
 				209427F32BDD31C50021F450 /* TimeLineView.swift */,
 				209427E22BDD2ED70021F450 /* Assets.xcassets */,
 				209427E42BDD2ED70021F450 /* Preview Content */,
@@ -177,14 +192,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2090739B2BE40469002A4014 /* HomeView.swift in Sources */,
 				20A044852BDD399700151038 /* TimelineTableViewCell.swift in Sources */,
 				20A044832BDD399700151038 /* Timeline.swift in Sources */,
+				2090739F2BE40611002A4014 /* FlightBoardView.swift in Sources */,
 				209427E12BDD2ED50021F450 /* ContentView.swift in Sources */,
+				209073A32BE40EE3002A4014 /* FlightDetailsView.swift in Sources */,
 				209427ED2BDD2F250021F450 /* FlightHistory.swift in Sources */,
+				2090739D2BE40528002A4014 /* UserProfileView.swift in Sources */,
 				209427EF2BDD2F560021F450 /* FlightInformation.swift in Sources */,
 				209427DF2BDD2ED50021F450 /* FlightTimeLineApp.swift in Sources */,
 				20A044842BDD399700151038 /* TimelinePoint.swift in Sources */,
 				209427F42BDD31C50021F450 /* TimeLineView.swift in Sources */,
+				209073A12BE40DFE002A4014 /* FlightRowView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
