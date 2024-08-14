@@ -7,6 +7,23 @@
 
 import SwiftUI
 
+enum Route: Hashable {
+    case arrivals
+    case departures
+    case timeline
+    
+    var title: String {
+        switch self {
+        case .arrivals:
+            "Arrivals"
+        case .departures:
+            "Departures"
+        case .timeline:
+            "Flight TimeLine"
+        }
+    }
+}
+
 struct HomeView: View {
     private let flights = FlightInformation.generateFlights()
     private var arrivals: [FlightInformation] {
@@ -26,17 +43,10 @@ struct HomeView: View {
                     .rotationEffect(.degrees(-90))
                 
                 VStack(alignment: .leading, spacing: 10) {
-                    NavigationLink("Arrivals") {
-                        FlightBoardView(title: "Arrivals",flights: arrivals)
-                    }
+                    NavigationLink(Route.arrivals.title, value: Route.arrivals)
+                    NavigationLink(Route.departures.title, value: Route.departures)
+                    NavigationLink(Route.timeline.title, value: Route.timeline)
                     
-                    NavigationLink("Departures") {
-                        FlightBoardView(title: "Departures", flights: departures)
-                    }
-                    
-                    NavigationLink("Flight TimeLine") {
-                        TimelineView(flights: flights )
-                    }
                     Spacer()
                 }
                 .font(.title)
@@ -45,6 +55,16 @@ struct HomeView: View {
                 
             }
             .navigationTitle("Airport")
+            .navigationDestination(for: Route.self) { route in
+                switch route {
+                case .arrivals:
+                    FlightBoardView(title: Route.arrivals.title, flights: arrivals)
+                case .departures:
+                    FlightBoardView(title: Route.departures.title, flights: departures)
+                case .timeline:
+                    TimelineView(flights: flights)
+                }
+            }
         }
     }
 }

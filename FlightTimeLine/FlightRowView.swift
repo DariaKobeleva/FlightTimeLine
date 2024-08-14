@@ -12,7 +12,7 @@ struct FlightRowView: View {
     @State private var isPresented = false
 
     var body: some View {
-        Button(action: {isPresented.toggle()}) {
+        NavigationLink(destination: FlightDetailsView(flight: flight)){
             HStack {
                 Text("\(flight.airline) \(flight.number)")
                     .frame(width: 120, alignment: .leading)
@@ -25,9 +25,6 @@ struct FlightRowView: View {
                 Text(flight.flightStatus)
             }
         }
-        .sheet(isPresented: $isPresented, content: {
-            FlightDetailsView(isPresented: $isPresented, flight: flight)
-        })
     }
 }
 
