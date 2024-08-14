@@ -4,7 +4,7 @@ FlightTimeLine is an iOS application designed to help users manage and view a ti
 
 ## Demo
 
-<img src="[path/to/your/demo.gif](https://github.com/user-attachments/assets/9c11ae80-b1d4-4a86-ade0-2548480b7eb3)" width="200"/>
+<img src="https://github.com/user-attachments/assets/9c11ae80-b1d4-4a86-ade0-2548480b7eb3" width="200"/>
 
 ## Tech Stack
 - **Languages:** Swift
